@@ -10,7 +10,7 @@ the [Maud](https://github.com/biosustain/Maud) repository.
 `debugging-tools`: A selection of tools that are useful for identifying potential model misspecification.
 `initialisation`: Identifying when initialisation is an issue and how to solve the immediate initialisation 
 problem.
-'ode-issues': Common ODE error flags and methods to make the system solvable.
+`ode-issues`: Common ODE error flags and methods to make the system solvable.
 
 # Standard practices
 
