@@ -18,3 +18,27 @@ to place them is defined below:
   }
 }
 ```
+
+
+## Changing simulate to optimize to approach MAP faster
+Rather than simulating until you reach the typical set using the optimal 
+lead to faster turnovers. Replace the `simulate` funciton in `Maud/src/maud/running_stan.py`
+return line with this.
+
+```
+    return model.optimize(
+        output_dir=output_dir,
+        # iter_sampling=n,
+        iter=2000,
+        data=os.path.join(output_dir, "input_data_train.json"),
+        inits=os.path.join(output_dir, "inits.json"),
+        algorithm="LBFGS",
+        init_alpha=1e-4,
+        tol_param=1e-12,
+        history_size=10,
+        show_console=True,
+        refresh=1,
+        save_profile=True,
+        save_iterations=True,
+    )
+```
