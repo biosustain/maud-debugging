@@ -22,7 +22,7 @@ to place them is defined below:
 
 ## Changing simulate to optimize to approach MAP faster
 Rather than simulating until you reach the typical set using the optimal 
-lead to faster turnovers. Replace the `simulate` funciton in `Maud/src/maud/running_stan.py`
+leading to faster debugging cycles. Replace the `simulate` function in `Maud/src/maud/running_stan.py`
 return line with this.
 
 ```
